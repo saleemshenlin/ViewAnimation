@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 因为下面的两个LinearLayout要覆盖，就是显示的位置有重叠，所以，必须使用AbsoluteLayout,绝对布局 -->
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉显示" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selection"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-190dp"
+        android:background="#666"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐藏" />
+    </LinearLayout>
+
+</RelativeLayout>
